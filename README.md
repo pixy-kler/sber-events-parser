@@ -45,19 +45,27 @@
 ## 🚀 Как запустить локально
 
 1. Клонируйте репозиторий и перейдите в папку проекта:
+```
    git clone https://github.com/pixy-kler/sber-events-parser.git
    cd sber-events-parser
-2. Установите зависимости:
+```
+3. Установите зависимости:
+ ```
    pip install -r requirements.txt
-3. Создайте файл .env в корне проекта и добавьте ваши SMTP-настройки:
+```
+5. Создайте файл .env в корне проекта и добавьте ваши SMTP-настройки:
+```
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=465
    SMTP_USER=your_email@gmail.com
    SMTP_PASS=your_app_password
-4. Настройте параметры фильтрации в config.py (ваш город, email получателя, веса релевантности).
-5. Запустите парсер:
+```
+7. Настройте параметры фильтрации в config.py (ваш город, email получателя, веса релевантности).
+8. Запустите парсер:
+   ```
    python main.py
-
+   ```
+   
 📁 Структура проекта
 ```
 ├── main.py            # Точка входа
